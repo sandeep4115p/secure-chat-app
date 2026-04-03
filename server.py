@@ -2,9 +2,10 @@
 import socket
 import threading
 import struct
+import os
 
-HOST = '127.0.0.1'   # listen on all interfaces
-PORT = 5000
+HOST =  "0.0.0.0"   # listen on all interfaces
+PORT = int(os.environ.get("PORT", 10000))  # default port or from env variable
 
 clients = []  # list of (conn, addr)
 
