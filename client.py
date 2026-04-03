@@ -15,8 +15,8 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.fernet import Fernet
 import base64
 
-SERVER_HOST = '127.0.0.1'
-SERVER_PORT = 5000
+SERVER_HOST = "interchange.proxy.rlwy.net"
+SERVER_PORT = 10385
 LOGS_DIR = "chat_logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
 
